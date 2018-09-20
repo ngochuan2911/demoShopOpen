@@ -1,0 +1,22 @@
+<?php
+class ControllerCommonHeader extends Controller {
+	public function index() {
+		$this->language->load('common/header');
+		
+		$data['title'] = $this->document->getTitle();
+		$data['description'] = $this->document->getDescription();
+		$data['links'] = $this->document->getLinks();
+		$data['styles'] = $this->document->getStyles();
+		$data['scripts'] = $this->document->getScripts();
+
+		if(isset($this->request->get['route'])){
+			$data['route'] = $this->request->get['route'];
+		} else {
+			$data['route'] = 'install/home';
+		}
+
+		$data['base'] = HTTP_SERVER;
+
+		return $this->load->view('common/header', $data);
+	}
+}

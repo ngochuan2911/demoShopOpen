@@ -1,0 +1,1 @@
+<?php// Configurationif(is_file('config/config-catalog.php')) {	require_once('config/config-catalog.php');}if(is_file('config/config-database.php')) {	require_once('config/config-database.php');}// Startuprequire_once(DIR_SYSTEM . 'startup.php');$application_config = 'catalog';// Applicationrequire_once(DIR_SYSTEM . 'framework.php');

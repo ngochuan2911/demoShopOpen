@@ -1,0 +1,1 @@
+User-agent: *Disallow: /admin/Disallow: /config/Disallow: /system/Disallow: /*&limitDisallow: /*&sortDisallow: /*?route=checkout/Disallow: /*?route=account/Sitemap: http://hthung.com/sitemapAllow: /

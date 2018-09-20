@@ -1,0 +1,1 @@
+<?php// Configurationif (is_file('../config/config-admin.php')) {	require_once('../config/config-admin.php');}if (is_file('../config/config-database.php')) {	require_once('../config/config-database.php');}// Startuprequire_once(DIR_SYSTEM . 'startup.php');$application_config = 'admin';// Applicationrequire_once(DIR_SYSTEM . 'framework.php');
